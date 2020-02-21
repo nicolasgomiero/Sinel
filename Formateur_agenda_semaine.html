@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/formateurAgendaSemaine.css">
+    <title>Agenda à la semaine Formateur</title>
+
+</head>
+<body>
+    <header>
+        <div id="image">
+            <img alt="logo sinel"  src="image/logo-complet-sinel.png" height="100" width="250"/>
+        </div>
+        <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="sinel.html">Accueil</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="search" placeholder="formation">
+            <input type="search" placeholder="Lieux">
+            <a href="connexion.html"><img id="icon" src="image/logout.svg" style="width: 24px; height: 24px;"/></a>
+            <button type="button" ><a href="">Profil</a></button>
+        </form>
+        </div>
+    </header>
+
+    <div id="page">
+        <aside>
+            <button class="accordion">TP CDA</button>
+            <div class="panel">
+                <p>Changements, prévus de longue date</p>
+            </div>
+
+            <button class="accordion">TP DWWM</button>
+            <div class="panel">
+                <p>Changements de dernière minute</p>
+            </div>
+
+            <button class="accordion">TP TSSR</button>
+            <div class="panel">
+                <p>Modifs et compagnies...</p>
+            </div>
+
+
+        </aside>
+
+        <section>
+            <div id="menuAgenda">
+
+                <nav>
+                    <ul>
+                        <li><a href="">Modifier</a></li>
+                        <li><a href="">Imprimer</a></li>
+                        <li><a href="">Partager</a></li>
+                        <li><a href="Formateur_agenda.html">Agenda au mois</a></li>
+                    </ul>
+                </nav>
+
+                <input type="date" name="date">
+
+            </div>
+            <div id="table">
+                <table>
+                    <caption>AGENDA A LA SEMAINE</caption>
+                    <thead>
+                    <tr><th style="border-bottom: 1px solid black">Lundi</th>
+                    <th style="border-bottom: 1px solid black">Mardi</th>
+                    <th style="border-bottom: 1px solid black">Mercredi</th>
+                    <th style="border-bottom: 1px solid black">Jeudi</th>
+                    <th style="border-bottom: 1px solid black">Vendredi</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>L</td><td>M</td><td>M</td><td>J</td><td>V</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </div>
+    <script src="js/sinel.js"></script>
+</body>
+</html>

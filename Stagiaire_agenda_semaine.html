@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/formateurAgendaSemaine.css">
+    <title>Agenda à la semaine Stagiaire</title>
+
+</head>
+<body>
+    <header>
+        <div id="image">
+            <img  src="image/logo-complet-sinel.png" height="100" width="250"/>
+        </div>
+        <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="">Accueil</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="search" placeholder="formation">
+            <input type="search" placeholder="Lieux">
+            <input id="icon" type="image" src="image/log-in.svg">
+            <button type="submit" ><a href="">Profil</a></button>
+        </form>
+        </div>
+    </header>
+
+    <div id="page">
+        <aside>
+            <label for="asideStagiaire">Remarques/Changements : </label>
+            <textarea id="asideStagiaire" name="asideStagiaire" rows="5" cols="33">Début de formation à 8h le 27/11/2019</textarea>
+        </aside>
+
+        <section>
+            <div id="menuAgenda">
+
+                <nav>
+                    <ul>
+                        <li><a href="">Imprimer</a></li>
+                        <li><a href="">Partager</a></li>
+                        <li><a href="Stagiaire_agenda.html">Agenda au mois</a></li>
+                    </ul>
+                </nav>
+
+                <input type="date" name="date">
+
+            </div>
+            <div id="table">
+                <table>
+                    <caption>AGENDA A LA SEMAINE</caption>
+                    <thead>
+                    <tr><th style="border-bottom: 1px solid black">Lundi</th>
+                    <th style="border-bottom: 1px solid black">Mardi</th>
+                    <th style="border-bottom: 1px solid black">Mercredi</th>
+                    <th style="border-bottom: 1px solid black">Jeudi</th>
+                    <th style="border-bottom: 1px solid black">Vendredi</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>L</td><td>M</td><td>M</td><td>J</td><td>V</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </div>
+    <script src="js/sinel.js"></script>
+</body>
+</html>
